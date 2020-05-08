@@ -13,7 +13,6 @@
 @interface ViewController () <AVAudioPlayerDelegate>
 
 @property (weak, nonatomic) IBOutlet MPVolumeView *mpVolumeView;
-@property (weak, nonatomic) IBOutlet UIButton *getVolumeButton;
 @property (weak, nonatomic) IBOutlet UILabel *currentVolumeLabel;
 
 @property (strong,nonatomic) AVAudioPlayer *player;
@@ -55,9 +54,7 @@
 }
 
 - (IBAction)tappedPlaySound:(id)sender {
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"meow" ofType:@"mp3"];
-    
-    NSURL *soundFileURL = [NSURL fileURLWithPath:filePath];
+    NSURL *soundFileURL = [NSURL fileURLWithPath:[NSBundle.mainBundle pathForResource:@"meow" ofType:@"mp3"]];
     self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:soundFileURL
                                                                    error:nil];
     self.player.numberOfLoops = 0;
