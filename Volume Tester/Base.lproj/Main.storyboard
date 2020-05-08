@@ -23,7 +23,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dmN-SQ-cf5">
-                                <rect key="frame" x="120.5" y="524" width="134" height="50"/>
+                                <rect key="frame" x="120.5" y="537" width="134" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Bn-8P-Wvp">
                                         <rect key="frame" x="0.0" y="0.0" width="57" height="50"/>
@@ -58,7 +58,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ytp-ZV-j83">
-                                <rect key="frame" x="130" y="454" width="115" height="50"/>
+                                <rect key="frame" x="130" y="467" width="115" height="50"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Zhq-zj-R9L"/>
@@ -72,9 +72,9 @@
                                     <action selector="tappedPlaySound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fvM-4B-eoi"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use button to get volume" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyI-rz-Wey">
-                                <rect key="frame" x="77.5" y="594" width="220.5" height="23"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50%" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyI-rz-Wey">
+                                <rect key="frame" x="108.5" y="134.5" width="158" height="84"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="70"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -82,15 +82,15 @@
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Ytp-ZV-j83" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Wu-Py-dXy"/>
-                            <constraint firstItem="kyI-rz-Wey" firstAttribute="top" secondItem="dmN-SQ-cf5" secondAttribute="bottom" constant="20" id="8Ul-HW-N1a"/>
                             <constraint firstItem="kyI-rz-Wey" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9dd-0k-DUz"/>
+                            <constraint firstItem="NRN-7J-FXo" firstAttribute="top" secondItem="kyI-rz-Wey" secondAttribute="bottom" constant="100" id="9qv-xg-RbJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dmN-SQ-cf5" secondAttribute="bottom" constant="80" id="FaE-Ah-NTL"/>
                             <constraint firstItem="NRN-7J-FXo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HBR-RY-O5Y"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NRN-7J-FXo" secondAttribute="trailing" constant="20" id="UyK-Lo-vjH"/>
                             <constraint firstItem="NRN-7J-FXo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z4h-Ah-x3V"/>
                             <constraint firstItem="dmN-SQ-cf5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aMM-Aj-1SS"/>
                             <constraint firstItem="dmN-SQ-cf5" firstAttribute="top" secondItem="Ytp-ZV-j83" secondAttribute="bottom" constant="20" id="aT7-Nm-XdF"/>
                             <constraint firstItem="NRN-7J-FXo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="c11-hi-Chi"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kyI-rz-Wey" secondAttribute="bottom" constant="50" id="d2u-V4-cSz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

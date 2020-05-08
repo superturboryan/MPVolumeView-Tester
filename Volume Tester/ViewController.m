@@ -24,19 +24,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [AVAudioSession.sharedInstance setActive:YES error:nil];
-    
-    [AVAudioSession.sharedInstance setCategory:AVAudioSessionCategoryPlayback error:nil];
-    
-    self.mpVolumeView.backgroundColor = UIColor.clearColor;
-    
-    self.currentVolumeLabel.text = [NSString stringWithFormat:@"%f", [self currentSystemVolume]];
-    
     [NSNotificationCenter.defaultCenter
      addObserver:self
      selector:@selector(updateVolumeLabel)
      name:@"AVSystemController_SystemVolumeDidChangeNotification"
      object:nil];
+    
+    [AVAudioSession.sharedInstance setActive:YES error:nil];
+    [AVAudioSession.sharedInstance setCategory:AVAudioSessionCategoryPlayback error:nil];
+    
+    self.mpVolumeView.backgroundColor = UIColor.clearColor;
+    
+    self.currentVolumeLabel.text = [NSString stringWithFormat:@"%f", [self currentSystemVolume]];
 }
 
 - (void)dealloc {
