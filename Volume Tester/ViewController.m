@@ -66,11 +66,11 @@
 }
 
 -(void)updateVolumeLabel {
-    self.currentVolumeLabel.text = [NSString stringWithFormat:@"%f", [self currentSystemVolume]];
+    self.currentVolumeLabel.text = [NSString stringWithFormat:@"%.0f%@", [self currentSystemVolume], @"%"];
 }
 
 -(float)currentSystemVolume {
-    return AVAudioSession.sharedInstance.outputVolume;
+    return AVAudioSession.sharedInstance.outputVolume * 100;
 }
 
 
